@@ -20,7 +20,6 @@ import Footer from "./components/footer"
 class App extends React.Component {
     render() {
     
-        console.log((window.location.pathname!="/login"))
         console.log((window.location.pathname!="/SignIn"))
         return(<div>
                 <Navbar/>
