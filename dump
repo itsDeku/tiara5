@@ -1,0 +1,21 @@
+import React from "react"
+
+import Navbar from "./navbar";
+import Footer from "./components/footer"
+import Main from "./components/main"
+import Login from "./components/Login"
+
+
+function App() {
+    console.log(window.location.pathname)
+    return (
+        <div> 
+            {window.location.pathname=="/login"||"/SignIn"?null:<Navbar/>}
+            <Main />
+            {window.location.pathname=="/login"||"/SignIn"?null:<Footer/>}
+        </div>
+        
+    )
+}
+
+export default App;
